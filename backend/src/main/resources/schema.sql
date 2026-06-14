@@ -1,0 +1,47 @@
+CREATE TABLE IF NOT EXISTS user (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    real_name VARCHAR(50) NOT NULL,
+    phone VARCHAR(20) DEFAULT NULL,
+    email VARCHAR(100) DEFAULT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'USER',
+    status TINYINT NOT NULL DEFAULT 1,
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS book (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    isbn VARCHAR(30) DEFAULT NULL,
+    publisher VARCHAR(100) DEFAULT NULL,
+    category VARCHAR(50) DEFAULT NULL,
+    description TEXT DEFAULT NULL,
+    cover_url VARCHAR(500) DEFAULT NULL,
+    total INT NOT NULL DEFAULT 1,
+    available INT NOT NULL DEFAULT 1,
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    update_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS borrow_record (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    book_id BIGINT NOT NULL,
+    borrow_time DATETIME NOT NULL,
+    due_time DATETIME NOT NULL,
+    return_time DATETIME DEFAULT NULL,
+    status VARCHAR(20) NOT NULL DEFAULT 'BORROWED',
+    fine_amount DECIMAL(10,2) DEFAULT 0.00,
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_username ON user(username);
+CREATE INDEX IF NOT EXISTS idx_role ON user(role);
+CREATE INDEX IF NOT EXISTS idx_title ON book(title);
+CREATE INDEX IF NOT EXISTS idx_category ON book(category);
+CREATE INDEX IF NOT EXISTS idx_author ON book(author);
+CREATE INDEX IF NOT EXISTS idx_user_id ON borrow_record(user_id);
+CREATE INDEX IF NOT EXISTS idx_book_id ON borrow_record(book_id);
+CREATE INDEX IF NOT EXISTS idx_status ON borrow_record(status);

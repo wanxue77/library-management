@@ -1,0 +1,43 @@
+{
+  "users": [
+    {"username":"admin","password":"admin123","realName":"系统管理员","role":"ADMIN"},
+    {"username":"test","password":"test123","realName":"测试用户","phone":"13800138000","email":"test@example.com","role":"USER"}
+  ],
+  "books": [
+    {"title":"Java编程思想","author":"Bruce Eckel","isbn":"9787111213826","publisher":"机械工业出版社","category":"编程","description":"Java经典入门书籍，全球畅销20余年。本书以大量实例讲述Java面向对象编程的核心思想，是Java开发者案头必备的经典著作。","total":5},
+    {"title":"深入理解Java虚拟机","author":"周志明","isbn":"9787111421900","publisher":"机械工业出版社","category":"编程","description":"JVM深度解析经典之作，涵盖内存管理、类加载机制、垃圾回收、性能调优等核心主题，是Java高级工程师必读之书。","total":3},
+    {"title":"Spring实战","author":"Craig Walls","isbn":"9787115417305","publisher":"人民邮电出版社","category":"编程","description":"Spring框架权威指南，涵盖Spring Core、Spring MVC、Spring Boot等核心模块，适合各层次Java开发者学习参考。","total":4},
+    {"title":"代码整洁之道","author":"Robert C. Martin","isbn":"9787115216878","publisher":"人民邮电出版社","category":"编程","description":"编程大师Bob大叔的经典著作，教你如何写出可读性强、易维护的优雅代码，是每个程序员的必读之书。","total":6},
+
+    {"title":"活着","author":"余华","isbn":"9787530215319","publisher":"北京十月文艺出版社","category":"文学","description":"讲述一个人一生的故事，展现了中国近代历史的沧桑巨变，以及人在苦难中的坚韧与温情，感人至深。","total":8},
+    {"title":"百年孤独","author":"加西亚·马尔克斯","isbn":"9787544253994","publisher":"南海出版公司","category":"文学","description":"魔幻现实主义经典之作，讲述布恩迪亚家族七代人的传奇故事，是拉丁美洲文学的巅峰代表。","total":6},
+    {"title":"围城","author":"钱钟书","isbn":"9787020024759","publisher":"人民文学出版社","category":"文学","description":"中国现代文学经典，以幽默犀利的笔调描绘了知识分子的生活百态，围城已成为一种文化符号。","total":7},
+
+    {"title":"三体","author":"刘慈欣","isbn":"9787536692930","publisher":"重庆出版社","category":"科幻","description":"中国科幻文学里程碑，讲述地球文明与三体文明的首次接触及宇宙社会学的宏大叙事，获雨果奖最佳长篇小说。","total":10},
+    {"title":"银河帝国：基地","author":"艾萨克·阿西莫夫","isbn":"9787559402745","publisher":"江苏文艺出版社","category":"科幻","description":"科幻小说大师阿西莫夫的经典巨著，描绘了银河帝国的兴衰与心理史学的伟大预言。","total":5},
+
+    {"title":"人类简史","author":"尤瓦尔·赫拉利","isbn":"9787508647357","publisher":"中信出版社","category":"历史","description":"从认知革命到科学革命，讲述人类这一物种的宏大历史，颠覆你对人类文明的全部认知。","total":9},
+    {"title":"万历十五年","author":"黄仁宇","isbn":"9787108009821","publisher":"生活·读书·新知三联书店","category":"历史","description":"以万历十五年为切入点，剖析明代社会的深层结构，被誉为大历史观的开山之作。","total":5},
+
+    {"title":"苏菲的世界","author":"乔斯坦·贾德","isbn":"9787506341271","publisher":"作家出版社","category":"哲学","description":"以小说的形式讲述西方哲学史，从苏格拉底到萨特，引领读者进入奇妙的哲学世界。","total":6},
+
+    {"title":"思考，快与慢","author":"丹尼尔·卡尼曼","isbn":"9787508633558","publisher":"中信出版社","category":"心理学","description":"诺贝尔经济学奖得主卡尼曼的力作，揭示人类思维的两套系统：直觉快速的系统1和理性缓慢的系统2。","total":6},
+    {"title":"社会性动物","author":"艾略特·阿伦森","isbn":"9787508048703","publisher":"世界图书出版公司","category":"心理学","description":"社会心理学领域的经典教材，以生动有趣的案例揭示社会对人类行为的影响。","total":4},
+
+    {"title":"国富论","author":"亚当·斯密","isbn":"9787100100115","publisher":"商务印书馆","category":"经济学","description":"经济学开山之作，亚当·斯密系统阐述了分工理论、市场机制和自由竞争思想，奠定了现代经济学的基础。","total":3},
+    {"title":"小岛经济学","author":"彼得·希夫","isbn":"9787508654157","publisher":"中信出版社","category":"经济学","description":"用简单的故事讲述复杂的经济学原理，从一座小岛的渔夫说起，轻松理解通货膨胀、贸易等核心概念。","total":5},
+
+    {"title":"追风筝的人","author":"卡勒德·胡赛尼","isbn":"9787208061644","publisher":"上海人民出版社","category":"小说","description":"感动全球亿万读者的温情小说，关于友谊、背叛与救赎的故事，为你，千千万万遍。","total":8},
+    {"title":"挪威的森林","author":"村上春树","isbn":"9787532725694","publisher":"上海译文出版社","category":"小说","description":"村上春树的代表作，一段关于青春、爱情与成长的动人故事，影响了一代文艺青年。","total":7},
+
+    {"title":"史蒂夫·乔布斯传","author":"沃尔特·艾萨克森","isbn":"9787508630069","publisher":"中信出版社","category":"传记","description":"唯一获得乔布斯本人授权的官方传记，全面展现这位科技天才的传奇人生与独特个性。","total":8},
+    {"title":"苏东坡传","author":"林语堂","isbn":"9787540447885","publisher":"湖南文艺出版社","category":"传记","description":"林语堂以优美文笔讲述苏东坡的一生，展现这位千古文豪的豁达人生与不朽才情。","total":4},
+
+    {"title":"时间简史","author":"史蒂芬·霍金","isbn":"9787535732309","publisher":"湖南科学技术出版社","category":"科学","description":"霍金的科普经典，从大爆炸到黑洞，带领读者探索宇宙的奥秘，畅销全球的科普名著。","total":5},
+    {"title":"自私的基因","author":"理查德·道金斯","isbn":"9787508639499","publisher":"中信出版社","category":"科学","description":"以基因的视角重新审视进化论，提出自私的基因这一颠覆性概念，改变了我们对生命的理解。","total":4},
+
+    {"title":"艺术的故事","author":"贡布里希","isbn":"9787563360485","publisher":"广西美术出版社","category":"艺术","description":"全球最受欢迎的艺术史入门读物，从史前洞穴壁画到现代艺术，讲述人类艺术的发展历程。","total":3},
+
+    {"title":"从优秀到卓越","author":"吉姆·柯林斯","isbn":"9787508602046","publisher":"中信出版社","category":"管理","description":"管理经典之作，研究那些能够从优秀跨越到卓越的公司究竟做对了什么，对企业管理有深远影响。","total":4}
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+target/
+*.db
+upload/
+data/
+.idea/
+.claude/
+*.log
+.env
+.DS_Store
+Thumbs.db
